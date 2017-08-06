@@ -372,7 +372,7 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{5mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{3mm}
+\newcommand{\acvSectionTopSkip}{3mm} % Original was 3mm
 \newcommand{\acvSectionContentTopSkip}{2.5mm}
 
 
@@ -492,12 +492,6 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://www.reddit.com/user/\@reddit}{\faReddit\acvHeaderIconSep\@reddit}%
         }%
-      \ifthenelse{\isundefined{\@xing}}%
-        {}%
-        {%
-          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://www.xing.com/profile/\@xing}{\faXingSquare\acvHeaderIconSep\@xing}
-        }%
       \ifthenelse{\isundefined{\@extrainfo}}%
         {}%
         {%
@@ -548,7 +542,7 @@
   \paragraphstyle
 }{%
   \par
-  \vspace{2mm}
+  \vspace{0mm} % Original was 2mm
 }
 
 % Define an environment for cventry
